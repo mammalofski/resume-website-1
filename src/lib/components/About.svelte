@@ -1,10 +1,12 @@
 <script>
     export let bio = `
-        I am an AI Engineer with extensive experience in machine learning model development, 
-        deployment, and optimization. Specializing in deep learning architectures and natural 
-        language processing, I build scalable AI solutions that drive business value and 
-        innovation. My expertise spans the entire ML lifecycle from data preprocessing to 
-        production deployment and monitoring.
+        Award-winning AI Engineering Technical Lead with expertise in designing and implementing AI-powered 
+        solutions for enterprise environments. Specializing in LLM-based applications, agentic AI architectures, 
+        and advanced RAG systems. My work at RBC has demonstrated measurable productivity improvements 
+        through AI adoption, with tangible results like reducing ticket closing time by 27% and automating 22% of 
+        support issues through LLM-agent solutions. With a strong background in both software engineering and AI, 
+        I bridge the gap between cutting-edge AI research and practical business applications to deliver 
+        transformative technical solutions.
     `;
 </script>
 

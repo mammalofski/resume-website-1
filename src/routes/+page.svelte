@@ -37,13 +37,13 @@
 </script>
 
 <svelte:head>
-    <title>AI Engineer | Resume & Portfolio</title>
-    <meta name="description" content="Professional portfolio and resume of an AI Engineer specializing in machine learning, deep learning, and software development" />
+    <title>Mohammad Navid Masahati | AI Engineer</title>
+    <meta name="description" content="Professional portfolio and resume of Mohammad Navid Masahati, an AI Engineer specializing in machine learning, deep learning, and software development" />
 </svelte:head>
 
 <main>
     <Header 
-        name="John Smith" 
+        name="Mohammad Navid Masahati" 
         title="AI Engineer" 
         tagline="Building intelligent systems that solve real-world problems" 
     />
@@ -52,20 +52,20 @@
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
     
     <About />
     <Skills />
-    <Education />
     <Experience />
+    <Education />
     <Contact />
     
     <footer>
-        <p>&copy; {new Date().getFullYear()} John Smith. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Mohammad Navid Masahati. All rights reserved.</p>
     </footer>
 </main>
 

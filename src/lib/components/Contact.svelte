@@ -1,10 +1,12 @@
 <script>
     import { fade } from 'svelte/transition';
 
-    export let email = "ai.engineer@example.com";
-    export let linkedin = "https://linkedin.com/in/ai-engineer";
-    export let github = "https://github.com/ai-engineer";
-    export let portfolio = "https://portfolio.ai-engineer.com";
+    export let email = "masahati.navid@gmail.com";
+    export let workEmail = "mohammadnavid.masahati@rbc.com";
+    export let phone = "+1-403-899-2166";
+    export let linkedin = "https://www.linkedin.com/in/mohammad-navid";
+    export let github = "https://github.com/navid-masahati";
+    export let portfolio = "https://navid-masahati.github.io";
 
     let name = '';
     let contactEmail = '';
@@ -35,9 +37,17 @@
             <p>Feel free to reach out through any of these channels or use the form to send me a direct message.</p>
             
             <div class="contact-links">
+                <a href="tel:{phone}" class="contact-link">
+                    <span class="icon">📱</span>
+                    <span class="text">{phone}</span>
+                </a>
                 <a href="mailto:{email}" class="contact-link">
                     <span class="icon">✉️</span>
                     <span class="text">{email}</span>
+                </a>
+                <a href="mailto:{workEmail}" class="contact-link">
+                    <span class="icon">💼</span>
+                    <span class="text">{workEmail}</span>
                 </a>
                 <a href={linkedin} target="_blank" rel="noopener noreferrer" class="contact-link">
                     <span class="icon">👔</span>

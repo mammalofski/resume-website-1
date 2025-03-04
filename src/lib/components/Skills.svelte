@@ -86,7 +86,7 @@
     <div class="skills-container">
         {#each skillGroups as group, i}
             {#if visible}
-                <div class="skill-group" transition:fade={{ delay: i * 100, duration: 400 }}>
+                <div class="skill-category" transition:fade={{ delay: i * 100, duration: 400 }}>
                     <h3>{group.category}</h3>
                     <ul class="skill-list">
                         {#each group.skills as skill}
@@ -134,36 +134,19 @@
         background-color: var(--accent-color);
     }
 
-    .skill-group {
+    .skill-category {
         margin-bottom: 2rem;
-        padding: 1.5rem;
-        border: 1px solid var(--border-color);
-        border-radius: 8px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .skill-group:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
     }
 
     .skill-list {
-        list-style: none;
-        padding: 0;
-        margin: 1rem 0 0 0;
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        margin: 0.8rem 0 0 0;
     }
 
     .skill-item {
-        position: relative;
-        padding: 0.4rem 0 0.4rem 1.2rem;
+        padding: 0.3rem 0;
         font-size: 0.95rem;
-    }
-
-    .skill-item:before {
-        content: '•';
-        position: absolute;
-        left: 0;
-        color: var(--accent-color);
     }
 
     @media (max-width: 768px) {

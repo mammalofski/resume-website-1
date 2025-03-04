@@ -23,24 +23,6 @@
             ]
         }
     ];
-
-    export let certifications = [
-        {
-            name: 'TensorFlow Developer Certificate',
-            issuer: 'Google',
-            year: '2023'
-        },
-        {
-            name: 'AWS Certified Machine Learning - Specialty',
-            issuer: 'Amazon Web Services',
-            year: '2022'
-        },
-        {
-            name: 'Deep Learning Specialization',
-            issuer: 'DeepLearning.AI',
-            year: '2021'
-        }
-    ];
 </script>
 
 <section id="education" class="education">
@@ -48,7 +30,6 @@
     
     <div class="education-container">
         <div class="degrees">
-            <h3>Academic Degrees</h3>
             <div class="timeline">
                 {#each education as edu, i}
                     <div class="timeline-item" in:slide={{ delay: i * 150, duration: 400 }}>
@@ -70,21 +51,6 @@
                 {/each}
             </div>
         </div>
-        
-        <div class="certifications">
-            <h3>Certifications</h3>
-            <div class="cert-list">
-                {#each certifications as cert, i}
-                    <div class="cert-item" in:slide={{ delay: i * 150, duration: 400 }}>
-                        <div class="cert-year">{cert.year}</div>
-                        <div class="cert-details">
-                            <h4>{cert.name}</h4>
-                            <p>Issued by {cert.issuer}</p>
-                        </div>
-                    </div>
-                {/each}
-            </div>
-        </div>
     </div>
 </section>
 
@@ -95,15 +61,14 @@
     
     .education-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
+        grid-template-columns: 1fr;
     }
     
-    h2, h3 {
+    h2 {
         position: relative;
     }
     
-    h2::after, h3::after {
+    h2::after {
         content: '';
         position: absolute;
         left: 0;
@@ -172,44 +137,6 @@
         margin: 0.3rem 0 0;
     }
     
-    .cert-list {
-        margin-top: 2rem;
-    }
-    
-    .cert-item {
-        display: flex;
-        margin-bottom: 1.5rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid var(--border-color);
-    }
-    
-    .cert-item:last-child {
-        border-bottom: none;
-    }
-    
-    .cert-year {
-        flex: 0 0 4rem;
-        font-weight: 600;
-    }
-    
-    .cert-details h4 {
-        margin: 0 0 0.3rem;
-        font-size: 1.1rem;
-    }
-    
-    .cert-details p {
-        margin: 0;
-        font-size: 0.95rem;
-        color: var(--accent-color);
-    }
-    
-    @media (max-width: 768px) {
-        .education-container {
-            grid-template-columns: 1fr;
-            gap: 2rem;
-        }
-    }
-
     .achievements {
         margin: 0.5rem 0 0;
         padding-left: 1.2rem;
@@ -220,5 +147,11 @@
         margin-bottom: 0.3rem;
         font-size: 0.9rem;
         color: var(--accent-color);
+    }
+
+    @media (max-width: 768px) {
+        .education-container {
+            gap: 2rem;
+        }
     }
 </style>
